@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    /* max-height: 100%;
+    width: auto; */
+    background: url(../design/pink-clouds.jpg) no-repeat fixed;
+    background-size: 100% auto;
+}
+
+main {
+    flex-basis: 65%;
+    max-width: auto;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    flex-basis: 35%;
+}
