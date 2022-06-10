@@ -4,24 +4,81 @@ body {
     width: auto; */
     background: url(../design/pink-clouds.jpg) no-repeat fixed;
     background-size: 100% auto;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 main {
     flex-basis: 65%;
     max-width: auto;
-    max-height: 100%;
+    max-height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 content {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    max-width: 60%;
+    min-width: 50%;
 }
+
+    .logo {
+        margin-top: 3em;
+        display: flex;
+        gap: .25em;
+        font-size: 2.5em;
+        align-items: center;
+        font-family: 'My Soul', cursive;
+    }
+    
+        .gg-live-photo {
+            transform: scale(var(--ggs,1))
+        }
+        .gg-live-photo,
+        .gg-live-photo::after {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            border: 4px dotted currentColor
+        }
+        .gg-live-photo::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 1px solid transparent;
+            top: 8px;
+            left: 8px;
+            box-shadow:
+                0 0 0 4px,
+                inset 0 0 0 4px currentColor
+        }
+
+    h1 {
+        text-transform: uppercase;
+        color: #3a2238;
+        font-size: 5em;
+        line-height: 1em;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+        .bold_h1 {
+            font-weight: 700;
+        }
+
+    p {
+        margin: 5% 0;
+    }
 
 img {
     flex-basis: 35%;
+    height: auto;
+    width: 41%;
+    justify-self: flex-end;
 }
