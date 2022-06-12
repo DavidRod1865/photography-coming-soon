@@ -1,7 +1,5 @@
 body {
     display: flex;
-    /* max-height: 100%;
-    width: auto; */
     background: url(../design/pink-clouds.jpg) no-repeat fixed;
     background-size: 100% auto;
     margin: 0;
@@ -66,10 +64,16 @@ content {
         font-family: 'Comfortaa', cursive;
         font-weight: 300;
         margin-bottom: 0;
+        cursor: pointer;
     }
 
         .bold_h1 {
             font-weight: 700;
+        }
+
+        #fadein {
+            opacity: 0;
+            transition: 5s opacity;
         }
 
     p {
