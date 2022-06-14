@@ -1,88 +1,98 @@
 body {
-    display: flex;
     background: url(../design/pink-clouds.jpg) no-repeat fixed;
-    background-size: 100% auto;
+    background-size: cover;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-}
-
-main {
-    flex-basis: 65%;
-    max-width: auto;
-    max-height: auto;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
 }
 
-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-    min-width: 50%;
-}
-
-    .logo {
-        margin-top: 3em;
+    content {
         display: flex;
-        gap: .25em;
-        font-size: 2.5em;
+        flex-direction: column;
         align-items: center;
-        font-family: 'My Soul', cursive;
+        flex-basis: 60%;
     }
-    
-        .gg-live-photo {
-            transform: scale(var(--ggs,1))
-        }
-        .gg-live-photo,
-        .gg-live-photo::after {
-            box-sizing: border-box;
-            position: relative;
-            display: block;
-            width: 40px;
-            height: 40px;
-            border-radius: 100px;
-            border: 4px dotted currentColor
-        }
-        .gg-live-photo::after {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border: 1px solid transparent;
-            top: 8px;
-            left: 8px;
-            box-shadow:
-                0 0 0 4px,
-                inset 0 0 0 4px currentColor
+        .leftSide {
+            max-width: 100%;
+            height: auto;
+            padding: 0 7em;
         }
 
-    h1 {
-        text-transform: uppercase;
-        color: #3a2238;
-        font-size: 5em;
-        line-height: 1em;
-        font-family: 'Comfortaa', cursive;
-        font-weight: 300;
-        margin-bottom: 0;
-        cursor: pointer;
+            .logo {
+                margin-top: 3em;
+                display: flex;
+                gap: .25em;
+                font-size: 2.5rem;
+                font-family: 'My Soul', cursive;
+            }
+
+                .gg-live-photo {
+                    transform: scale(var(--ggs,1))
+                }
+                .gg-live-photo,
+                .gg-live-photo::after {
+                    box-sizing: border-box;
+                    position: relative;
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100px;
+                    border: 4px dotted currentColor
+                }
+                .gg-live-photo::after {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid transparent;
+                    top: 8px;
+                    left: 8px;
+                    box-shadow:
+                        0 0 0 4px,
+                        inset 0 0 0 4px currentColor
+                }
+            
+            .comingSoon {
+                display: flex;
+                flex-direction: column;
+
+            }
+                
+                h1 {
+                    text-transform: uppercase;
+                    color: #3a2238;
+                    font-size: 5em;
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Comfortaa', cursive;
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+
+                .bold_h1 {
+                    font-weight: 700;
+                }
+
+                #fadein {
+                    opacity: 0;
+                    transition: 5s opacity;
+                }
+
+            p {
+                margin: 5% 0;
+            }
+
+    .imgBox {
+        flex-basis: 40%;
+        max-width: 40%;
+        margin: 0;
     }
 
-        .bold_h1 {
-            font-weight: 700;
+        img {
+            max-width: 100%;
+            min-width: 40%;
+            height: auto;
+            margin: 0;
         }
-
-        #fadein {
-            opacity: 0;
-            transition: 5s opacity;
-        }
-
-    p {
-        margin: 5% 0;
-    }
-
-img {
-    flex-basis: 35%;
-    height: auto;
-    width: 41%;
-    justify-self: flex-end;
-}
